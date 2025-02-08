@@ -11,7 +11,6 @@
     <style>
         img {
             padding: auto;
-            margin-top: 30%;
         }
         body {
             font-family: "Borel", serif;
@@ -26,7 +25,7 @@
             color: #333;
         }
         .container {
-            text-align: center;
+            text-align: center;           
             padding: 20px;
         }
         .button {
@@ -61,8 +60,8 @@
         @media (max-width: 600px) {
             body {
                 background: #ff99cc;
-                padding: 10px;
                 margin: 150px auto;
+                padding: 10px;
             }
             .container {
                 padding: 10px;
@@ -108,7 +107,8 @@
     <script>
         function scrollToLoveLetter() {
             document.getElementById('love-letter').style.display = 'block';
-            document.getElementById('love-letter').scrollIntoView({ behavior: 'smooth' });
+            document.getElementById('love-letter').scrollIntoView({ behavior: 'smooth', block: 'start' });
+            window.scrollBy(0, -document.body.offsetHeight);
         }
     </script>
 </body>
