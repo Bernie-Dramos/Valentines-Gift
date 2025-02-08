@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Borel&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Valentine's Day Celebration</title>
+    <style>
+        img {
+            padding: auto;
+            margin-top: auto;
+        }
+        body {
+            font-family: "Borel", serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: linear-gradient(to bottom, #ffcccc, #ff99cc);
+            color: #333;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+        .button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #55192d;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .button:hover {
+            background-color: #ff3366;
+        }
+        .love-letter {
+            font-family: "Sour Gummy", serif;
+            display: none;
+            margin-top: 50px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 50px auto;
+        }
+        .regards {
+            font-style: "Sour Gummy", serif;
+            text-align: right;
+        }
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="./couple.png" alt="Couple" width="200">
+        <h1>Happy Valentine's Day Baby!</h1>
+        <p>Dedicated to the one who makes every day feel like Valentine's Day...</p>
+        <button class="button" onclick="scrollToLoveLetter()">❤️ Read Love Letter</button>
+    </div>
+    <div class="love-letter" id="love-letter">
+        <h2>Hello My Love,</h2>
+        <p>
+            Being away from you on our first Valentine's Day is tough, but my 
+            love for you grows each and every day.  Every moment apart makes me appreciate our 
+            time together even more.  I can't wait until the day we can celebrate in person, 
+            I'm always thinking of you and you keep me whole and running. <br><br>
+            I wish I could be there to hug and kiss you my love, I miss you immensely and can't 
+            wait to see you again soon!  Happy Valentine's Day baby. Our love story is just 
+            beginning and I'm so excited for all the years to come with us both accomplishing 
+            what we want and having each other to support and hold the other. <br><br>
+            With every shared laugh and every quiet moment, my love for you grows stronger.  
+            We'll face challenges, but we'll overcome them together. You are so beautiful babe 
+            and I dont just mean that physically, I love your person, character, spirit and 
+            soul. I hope ou trully know I want no one else and will always do my best so that 
+            we're always side by side. 
+            <br> 
+            <br> 
+            I LOVE YOU MICHELLE FAITH NYANGANZA.
+        </p>
+        <p class="regards"> --- Forever Yours,</p>
+        <p class="regards">Your Valentines. ❤️</p>
+    </div>
+
+    <script>
+        function scrollToLoveLetter() {
+            document.getElementById('love-letter').style.display = 'block';
+            document.getElementById('love-letter').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
